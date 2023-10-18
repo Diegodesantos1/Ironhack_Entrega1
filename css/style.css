@@ -1,0 +1,129 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /* Elimina el margen predeterminado */
+    padding: 0;
+    /* Elimina el relleno predeterminado */
+}
+
+header {
+    background-color:lightgoldenrodyellow;
+    text-align: left;
+    width: 95%;
+    padding: 1em;
+}
+
+header:hover {
+    background-color: rgb(244, 248, 0);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: left;
+    /* Utilizamos em para el tamaño de fuente */
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    margin: 0em 3em 0em;
+    word-spacing: 10em;
+    /* Espacio arriba y abajo con em */
+}
+
+/* Estilo para el div izquierda */
+#izquierda {
+    width: 28%;
+    max-height: 1000px;
+    /* Ancho del 30% del contenedor padre (divide la pantalla en dos columnas) */
+    float: left;
+    /* Hace que el div flote a la izquierda */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    height: 100%;
+    /* Ocupará la altura completa del body */
+    max-height: 500px;
+}
+
+/* Estilo para el div slidebar */
+
+.slidebar {
+    width: 100%;
+    background-color: lightsalmon;
+    max-width: 505px; /* Establece un ancho máximo de 500px */
+    max-height: 505px; /* Establece una altura máxima de 500px */
+    min-height: 385px;
+    height: 385px;
+    text-align: center;
+    margin: 1.2em auto; /* Espacio arriba y abajo, y centrar horizontalmente */
+    display: table; /* Usar display: table para centrar verticalmente */
+}
+
+.slidebar p {
+    font-size: 1.5em;
+    /* Utilizamos em para el tamaño de fuente */
+    margin: 0.5em 0;
+    /* Espacio arriba y abajo con em */
+    display: table-cell; /* Centrar verticalmente */
+    vertical-align: middle; /* Centrar verticalmente */
+    text-decoration: underline;
+}
+
+.slidebar:hover {
+    background-color: rgb(255, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el div derecha */
+.derecha {
+    width: 68%;
+    /* Ancho del 70% del contenedor padre */
+    margin-left: 28%;
+    /* Añade margen izquierdo igual al ancho de #izquierda para evitar superposición */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    max-height: 500px;
+}
+
+/* Estilo para el elemento main dentro de derecha */
+main {
+    width: 100%;
+    /* Ocupa todo el ancho del contenedor */
+    padding: 1em;
+    /* Espacio alrededor del contenido con em */
+}
+
+main img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    /* Limitamos el ancho máximo al 100% */
+    height: auto;
+}
+
+/* Estilo para el elemento footer */
+footer {
+    width: 97%;
+    /* Ocupa todo el ancho del contenedor */
+    background-color: rgb(110, 192, 230);
+    text-align: center;
+    padding: 1em;
+    margin-left: 1em;
+    /* Espacio alrededor del contenido con em */
+}
+
+footer p {
+    font-size: 1.5em;
+    /* Utilizamos em para el tamaño de fuente */
+    margin: 0.5em 0;
+    /* Espacio arriba y abajo con em */
+}
+
+footer:hover {
+    background-color: lightblue;
+    transition: background-color 0.3s ease;
+}
+
+span.subrayado {
+    text-decoration: underline;
+}
